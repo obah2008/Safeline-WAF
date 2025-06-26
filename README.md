@@ -12,4 +12,5 @@ Safeline is a free and open source Web application firwall
 The projects assumes you have both virtual machines running and properly configured such that they can communicate with each other.
 
 ## Lab setup
-Installing
+### Installing DVWA
+What is DVWA?— It's an intentionally vulnerable we application that Uses MySQL and runs on PHP, primarily used by students while learning about web application vulnerabilities, gi 

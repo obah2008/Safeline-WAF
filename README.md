@@ -16,5 +16,11 @@ We'll be automatically deploying Safeline on the Ubuntu server by running the co
 ```bash
 bash -c "$(curl -fsSLk https://waf.chaitin.com/release/latest/manager.sh)" -- --en
 ```
+- You'll want to run the command as root
+- Also if Docker is not installed on your server, the safeline CLI installer will prompt you to do so, if that happens click on yes.
+
+![image](https://github.com/user-attachments/assets/83ddcace-152c-4dd0-b220-f81c578aad70)
+
+
 ### Installing DVWA
 What is DVWA?— It's an intentionally vulnerable we application that Uses MySQL and runs on PHP, primarily used by students while learning about web application vulnerabilities.

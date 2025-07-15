@@ -21,6 +21,20 @@ bash -c "$(curl -fsSLk https://waf.chaitin.com/release/latest/manager.sh)" -- --
 
 ![image](https://github.com/user-attachments/assets/83ddcace-152c-4dd0-b220-f81c578aad70)
 
-
 ### Installing DVWA
+Before installing DVWA we'll have to set up Apache2 the webserver we'll be running DVWA on we'll also be installing a bunch of packages we'll be using in the project.
+```bash
+sudo apt install apache2 mariadb-server php php-mysqli git unzip -y
+```
+the above command installs the following packages:
+- apache2
+- mariadb-server
+- php
+- php-mysqli
+- git
+- unzip
+
+After the installation is complete
+
+
 What is DVWA?— It's an intentionally vulnerable we application that Uses MySQL and runs on PHP, primarily used by students while learning about web application vulnerabilities.

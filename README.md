@@ -40,4 +40,12 @@ sudo systemctl status apache2
 ```
 <img width="1364" height="743" alt="image" src="https://github.com/user-attachments/assets/9e2fbd60-d413-4ad3-a1fd-592321981651" />
 
-What is DVWA?— It's an intentionally vulnerable we application that Uses MySQL and runs on PHP, primarily used by students while learning about web application vulnerabilities.
+#### What is DVWA? 
+DVWA is an intentionally vulnerable web application that Uses MySQL and runs on PHP, primarily used by students while learning about web application vulnerabilities.
+
+#### Cloning DVWA to Apache's Web directory
+Use the command below to open Apache's default web directory and clone DVWA to it from [here](https://github.com/digininja/DVWA.git)
+```bash
+cd /var/www/html
+sudo rm index.html && sudo git clone https://github.com/digininja/DVWA.git 
+```

@@ -21,6 +21,8 @@ bash -c "$(curl -fsSLk https://waf.chaitin.com/release/latest/manager.sh)" -- --
 
 ![image](https://github.com/user-attachments/assets/83ddcace-152c-4dd0-b220-f81c578aad70)
 
+- After the installation is complete copy the login credentials, then access the dashboard using the prompted address 
+
 ### Installing DVWA
 Before installing DVWA we'll have to set up Apache2 the webserver we'll be running DVWA on we'll also be installing a bunch of packages we'll be using in the project.
 ```bash

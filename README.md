@@ -36,7 +36,7 @@ the above command installs the following packages:
 
 After the installation is complete we can confirm if apache2 has been successfully installed by running the command below:
 ```bash
-
+sudo systemctl status apache2
 ```
 <img width="1364" height="743" alt="image" src="https://github.com/user-attachments/assets/9e2fbd60-d413-4ad3-a1fd-592321981651" />
 

@@ -34,7 +34,10 @@ the above command installs the following packages:
 - git
 - unzip
 
-After the installation is complete
+After the installation is complete we can confirm if apache2 has been successfully installed by running the command below:
+```bash
 
+```
+<img width="1364" height="743" alt="image" src="https://github.com/user-attachments/assets/9e2fbd60-d413-4ad3-a1fd-592321981651" />
 
 What is DVWA?— It's an intentionally vulnerable we application that Uses MySQL and runs on PHP, primarily used by students while learning about web application vulnerabilities.

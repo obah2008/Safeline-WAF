@@ -83,9 +83,12 @@ sudo nano config.inc.php
 $_DVWA[ 'db_user' ] = 'root';
 $_DVWA[ 'db_password' ] = 'p@ssw0rd';
 ```
+
 3. Change the login credentials to the one we set in the database earlier
 ```php
 $_DVWA[ 'db_user' ] = '<your_username>';
 $_DVWA[ 'db_password' ] = 'Your_password'>;
 ```
 
+- We can now access the DVWA dashboard by pasting the servers IP address into a browser
+<img width="1365" height="666" alt="Screenshot 2025-07-16 093449" src="https://github.com/user-attachments/assets/ef7d0e52-eea8-4ec7-9108-b5ada5a7d1e9" />

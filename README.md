@@ -60,7 +60,32 @@ sudo rm index.html && sudo git clone https://github.com/digininja/DVWA.git
 2. Run the command below to Create the database, create a new user and set a password for that user
 ```SQL
 CREATE DATABASE dvwa;
-GRANT ALL PRIVILEGES ON dvwa.* TO 'dvwauser'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON dvwa.* TO '<your_username>'@'localhost' IDENTIFIED BY 'Your_password'>;
 FLUSH PRIVILEGES;
 EXIT;
 ```
+- Create and Configure DVWA’s Config File:
+1.	Go to DVWA’s config directory
+```bash
+cd /var/www/html/config
+``` 
+2. 	Make a copy of the default config template
+```bash
+sudo cp config.inc.php.dist config.inc.php
+```
+- Edit the config file
+1. open the config file
+```bash
+sudo nano config.inc.php
+```
+2. Look for the lines below and edit them
+```php
+$_DVWA[ 'db_user' ] = 'root';
+$_DVWA[ 'db_password' ] = 'p@ssw0rd';
+```
+3. Change the login credentials to the one we set in the database earlier
+```php
+$_DVWA[ 'db_user' ] = '<your_username>';
+$_DVWA[ 'db_password' ] = 'Your_password'>;
+```
+

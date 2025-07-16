@@ -51,3 +51,4 @@ Use the command below to open Apache's default web directory and clone DVWA to i
 cd /var/www/html
 sudo rm index.html && sudo git clone https://github.com/digininja/DVWA.git 
 ```
+- Manually mapping the web application IP address to a domain name:

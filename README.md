@@ -92,3 +92,6 @@ $_DVWA[ 'db_password' ] = 'Your_password'>;
 
 - We can now access the DVWA dashboard by pasting the servers IP address into a browser
 <img width="1365" height="666" alt="Screenshot 2025-07-16 093449" src="https://github.com/user-attachments/assets/ef7d0e52-eea8-4ec7-9108-b5ada5a7d1e9" />
+
+### Importing DVWA to safeline
+Now that we have safeline and DVWA set up and configured we can imp

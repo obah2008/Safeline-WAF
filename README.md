@@ -93,5 +93,13 @@ $_DVWA[ 'db_password' ] = 'Your_password'>;
 - We can now access the DVWA dashboard by pasting the servers IP address into a browser
 <img width="1365" height="666" alt="Screenshot 2025-07-16 093449" src="https://github.com/user-attachments/assets/ef7d0e52-eea8-4ec7-9108-b5ada5a7d1e9" />
 
+### Mapping a domain name to the web application
+Right now, to access the DVWA dashboard we'd need to use an IP address instead of a domain name, since we don't have DNS setup we'll be performing the mapping locally following the intructions below
+
+- Navigate to the `/etc/hosts` directory
+```bash 
+cd /etc/hosts
+```
+
 ### Importing DVWA to safeline
 Now that we have safeline and DVWA set up and configured we can imp

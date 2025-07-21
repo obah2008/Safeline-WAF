@@ -107,11 +107,19 @@ sudo nano /etc/hosts
 - and finally save the file
 
 ### Importing DVWA to safeline
-Now that we have safeline and DVWA set up as well as a configured domain name, we can import the web application to Safeline.
+Before we do that, import the SSL certificate that was created [here](https://github.com/obah2008/Safeline-WAF/blob/main/Generating%20an%20SSL%20certificate.md)
+<img width="1362" height="699" alt="image" src="https://github.com/user-attachments/assets/2ae80aea-9e74-45e2-822c-c2a17280b73b" />
+
+Now that we have safeline and DVWA set up as well as a configured domain name, we can import the web application to Safeline. 
 - Navigate to the applications menu on the safefline dashboard
 - Select Add application
 - Add the domain name we created earlier
 - Select Port 443 as the only listening port
-- Use the certificate that was generated [here]()
+- Select the SSL certificate we imported
+- Put in `http://<server_ipaddress>` as the upstream
+- Add an application name and click submit
+
+<img width="1365" height="718" alt="image" src="https://github.com/user-attachments/assets/19f96078-42d4-48be-8aa3-ca53488bb73d" />
+
 
 Note: Safeline also acts as a reverse proxy, and as part of the many features a reverse proxy offers safeline enables SSL termination which encrypts plain HTTP traffic coming from your web application.

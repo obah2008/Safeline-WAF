@@ -96,10 +96,22 @@ $_DVWA[ 'db_password' ] = 'Your_password'>;
 ### Mapping a domain name to the web application
 Right now, to access the DVWA dashboard we'd need to use an IP address instead of a domain name, since we don't have DNS setup we'll be performing the mapping locally following the intructions below
 
-- Navigate to the `/etc/hosts` directory
+- Use nano to open the `hosts` file
 ```bash 
-cd /etc/hosts
+sudo nano /etc/hosts
 ```
+- Map the domain name to the we application
+ ```bash
+127.0.0.1 <name>
+```
+- and finally save the file
 
 ### Importing DVWA to safeline
-Now that we have safeline and DVWA set up and configured we can imp
+Now that we have safeline and DVWA set up as well as a configured domain name, we can import the web application to Safeline.
+- Navigate to the applications menu on the safefline dashboard
+- Select Add application
+- Add the domain name we created earlier
+- Select Port 443 as the only listening port
+- Use the certificate that was generated [here]()
+
+Note: Safeline also acts as a reverse proxy, and as part of the many features a reverse proxy offers safeline enables SSL termination which encrypts plain HTTP traffic coming from your web application.

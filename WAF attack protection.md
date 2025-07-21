@@ -22,3 +22,9 @@ If an IP makes more 5 requests in 10 seconds block IP for 5 minutes
 Now if we try and multiple incorrect password attempts in under 10s we'll be met with an error
 
 <img width="1364" height="693" alt="image" src="https://github.com/user-attachments/assets/2c96c3f6-90ec-46e4-ba06-bbf3eb8910a8" />
+
+We can also see details of the blocked attack on the safeline dashboard
+
+<img width="1220" height="673" alt="image" src="https://github.com/user-attachments/assets/738421c5-2562-4ea9-832f-d99e1b1936ca" />
+
+

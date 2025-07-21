@@ -22,3 +22,7 @@ Step 3: Generate the self signed certificate using the CSR and private key using
 ```bash
 openssl x509 -req -days 365 -in <domain>.csr -signkey <key_name>.key -out <certificate_name>.crt
 ```
+
+<img width="1364" height="702" alt="image" src="https://github.com/user-attachments/assets/12fc0bff-ac33-44b4-aa07-f36262c4702f" />
+
+With that the Certificate has been successfully generated

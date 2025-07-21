@@ -16,4 +16,9 @@ Step 2: Create a certificate signing request(CSR). The CSR is a file that is sen
 ```bash
 openssl req -new -key <key_name>.key -out <domain>.csr
 ```
-After that's complete you'd be prompted to fill a bunch of information, it doesn't matter what you fill in since we are signing it ourselves
+After that's complete you'd be prompted to fill a bunch of information, it doesn't matter what you fill in since we are signing it ourselves, Though set the `common name` to the name of the domain.
+
+Step 3: Generate the self signed certificate using the CSR and private key using the commmand below
+```bash
+openssl x509 -req -days 365 -in <domain>.csr -signkey <key_name>.key -out <certificate_name>.crt
+```

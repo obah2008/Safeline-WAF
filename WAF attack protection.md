@@ -8,7 +8,7 @@ This setup will demonstrate how to:
 - Observe and analyze WAF responses in real-time
 - Harden DVWA by tuning detection policies
 
-HTTP Flood Defense
+### HTTP Flood Defense
 Http flood is a type of denial of service attack in which a threat actor sends multiple HTTP requests to overload and disrupt the availability of a server.  
 To set this up:
 - on the safeline dashboard go to Applications menu 
@@ -27,4 +27,22 @@ We can also see details of the blocked attack on the safeline dashboard
 
 <img width="1220" height="673" alt="image" src="https://github.com/user-attachments/assets/738421c5-2562-4ea9-832f-d99e1b1936ca" />
 
+### Creating custom rules
+Safeline also allows you to create custom allow/deny rules for specific IP addresses, request headers, or URI patterns. In this case, we’ll demonstrate how to deny access from a specific IP address:
+- On the Safeline Dashboard, go the **Allow/Deny** menu.
+- Navigate to Rules → Access Control → Custom Rules.
+- Click Create Rule and configure the following:
+- Rule Type: Deny
+- Matching Type: Source IP Address
+- Operator: Equals to
+- IP Address: I'll use the source IP address of the http floods
+- Action: Block
 
+<img width="1268" height="635" alt="image" src="https://github.com/user-attachments/assets/648c1a5f-cb5b-42c7-9102-b2e1707e1bb7" />
+
+
+Once applied, any request from that IP will be blocked. we can test this by sending traffic from the blocked IP and observing the response.
+
+<img width="1267" height="667" alt="image" src="https://github.com/user-attachments/assets/5d62c816-f392-4569-bcde-f070d3afe6ae" />
+
+Authentication process is handled not by the server but by safeline instead

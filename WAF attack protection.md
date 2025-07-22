@@ -4,7 +4,7 @@ In this subdomain of the project, we’ll be configuring **Safeline WAF** to det
 
 This setup will demonstrate how to:
 - Apply and customize WAF security rules
-- Simulate attacks such as SQL Injection, XSS, and Command Injection
+- Simulate attacks such as SQL Injection, XSS, HTTP flooding
 - Observe and analyze WAF responses in real-time
 - Harden DVWA by tuning detection policies
 
@@ -45,4 +45,16 @@ Once applied, any request from that IP will be blocked. we can test this by send
 
 <img width="1267" height="667" alt="image" src="https://github.com/user-attachments/assets/5d62c816-f392-4569-bcde-f070d3afe6ae" />
 
-Authentication process is handled not by the server but by safeline instead
+Authentication Challenge
+Another really cool feature safeline has is the Auth feature or Authentication Challenge, which entails the Authentication process being handled not by the server but by safeline instead, this adds an additional security layer by requiring users to pass a browser-based validation before accessing a protected application. This is useful for:
+- Preventing bot access
+- Protecting sensitive endpoints from unauthenticated users
+
+To Set It Up:
+- Navigate to your DVWA application in Safeline
+- Go to Advanced Settings → Authentication.
+- And finally enable it
+
+Once enabled, any new client accessing DVWA will be met with a new login page controlled by safeline
+<img width="1361" height="668" alt="Screenshot 2025-07-22 134947" src="https://github.com/user-attachments/assets/b95ee706-52b2-4734-90cc-faf693413e6d" />
+

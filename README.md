@@ -10,5 +10,5 @@ Safeline is a free and open source Web application firewall created by Safepoint
 ## Prerequisites
 The projects assumes you have both virtual machines running on virtual box and properly configured such that they can communicate with each other.
 
-<img width="631" height="341" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/71fa6d21-78fd-416e-8dc0-59b1c7e73d77" />
+<img width="2604" height="1444" alt="image" src="https://github.com/user-attachments/assets/9d256e0b-5367-44e3-bfb6-862d9e89710d" />
 
